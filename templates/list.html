@@ -6,25 +6,25 @@
 {% for item in items %}
   <li>
     <div class='item-content'>
-      {% if isurl(item[2]) %}
-        <a href="{{item[2]}}">{{item[2]}}</a>
+      {% if isurl(item.content) %}
+        <a href="{{item.content}}">{{item.content}}</a>
       {% else %}
         {{item[2]}}
       {% endif %}
     </div>
     <span class="item-added">
-      <small>{{item[4].strftime('%H:%M, %d %b %Y')}}</small>
+      <small>{{item.added.strftime('%H:%M, %d %b %Y')}}</small>
     </span>
     <span class='item-do'>
       {% if state == 'unread' %}
-        <a href="/check/{{item[0]}}">
+        <a href="/check/{{item.id}}">
           <img src="/static/check.png" alt="check">
         </a>
       {% else %}
-        <a href="/re-add/{{item[0]}}">
+        <a href="/re-add/{{item.id}}">
           <img src="/static/re-add.png" alt="re-add">
         </a>
-        <a href="/delete/{{item[0]}}">
+        <a href="/delete/{{item.id}}">
           <img src="/static/delete.png" alt="delete">
         </a>
       {% endif %}
