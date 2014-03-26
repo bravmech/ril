@@ -1,0 +1,925 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"get_",
+				"get_db"
+			],
+			[
+				"nav",
+				"navbar-link"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"get",
+				"get_item"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"login",
+				"login_user"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"W",
+				"WORDS_PKL"
+			],
+			[
+				"confiden",
+				"confidenceLo"
+			],
+			[
+				"e",
+				"eab	each_byte { |byte| .. }"
+			],
+			[
+				"f",
+				"fname"
+			],
+			[
+				"a",
+				"args"
+			],
+			[
+				"sa",
+				"satisfiable"
+			],
+			[
+				"all",
+				"all_causes"
+			],
+			[
+				"C",
+				"CAUSES"
+			],
+			[
+				"draw",
+				"draw_path"
+			],
+			[
+				"B",
+				"BookAdmin"
+			],
+			[
+				"Au",
+				"AuthorAdmin"
+			],
+			[
+				"proj",
+				"project_dir"
+			],
+			[
+				"T",
+				"TEST_JOBS"
+			],
+			[
+				"curr",
+				"current_datetime"
+			],
+			[
+				"rend",
+				"render_to_response"
+			],
+			[
+				"hors",
+				"hours_ahead"
+			],
+			[
+				"ver",
+				"version"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"P",
+				"PageVersion"
+			],
+			[
+				"mc",
+				"mc_key"
+			],
+			[
+				"g",
+				"get_by_id"
+			],
+			[
+				"mc_",
+				"mc_get_with_age"
+			],
+			[
+				"sub",
+				"subreddits"
+			],
+			[
+				"subre",
+				"subreddit"
+			],
+			[
+				"D",
+				"DateTimeProperty"
+			],
+			[
+				"coo",
+				"cookie_val"
+			],
+			[
+				"Log",
+				"LogoutPage"
+			],
+			[
+				"make",
+				"make_pw_hash"
+			],
+			[
+				"va",
+				"valid_username"
+			],
+			[
+				"vis",
+				"visits_cookie_val"
+			],
+			[
+				"visi",
+				"visit_cookie_val"
+			],
+			[
+				"hash",
+				"hash_str"
+			],
+			[
+				"S",
+				"SearchNode"
+			],
+			[
+				"M",
+				"MinPQ"
+			],
+			[
+				"seq",
+				"sequence"
+			],
+			[
+				"is",
+				"isGoal"
+			],
+			[
+				"twin",
+				"twinpq"
+			],
+			[
+				"nei",
+				"neighbors"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"ac",
+				"actorsG"
+			],
+			[
+				"we",
+				"weighted_graph"
+			],
+			[
+				"cha",
+				"characters"
+			],
+			[
+				"mar",
+				"marvelG"
+			],
+			[
+				"in",
+				"insert"
+			],
+			[
+				"p",
+				"parent"
+			],
+			[
+				"heap",
+				"heap_last"
+			],
+			[
+				"hea",
+				"heapify"
+			],
+			[
+				"Te",
+				"TestCase"
+			],
+			[
+				"r",
+				"requests"
+			],
+			[
+				"gr",
+				"greet"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"sl",
+				"slopeTo"
+			],
+			[
+				"m",
+				"main	method (main)"
+			],
+			[
+				"che",
+				"check_sudoku"
+			],
+			[
+				"ch",
+				"check_sudoku"
+			],
+			[
+				"su",
+				"sudoku"
+			],
+			[
+				"solv",
+				"solve_sudoku"
+			],
+			[
+				"Enu",
+				"Enumerable"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"linea",
+				"linearRegCostFunction"
+			],
+			[
+				"getElements",
+				"getElementsByTagName"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"backgr",
+				"background	background: color image repeat attachment position"
+			],
+			[
+				"dis",
+				"display	display: inline"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ril.py",
+			"settings":
+			{
+				"buffer_size": 6873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "utils.py",
+			"settings":
+			{
+				"buffer_size": 920,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/list.css",
+			"settings":
+			{
+				"buffer_size": 5154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/new.html",
+			"settings":
+			{
+				"buffer_size": 198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/list.html",
+			"settings":
+			{
+				"buffer_size": 845,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/main.css",
+			"settings":
+			{
+				"buffer_size": 1891,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/php.sublime-build",
+	"command_palette":
+	{
+		"height": 306.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 509.0
+	},
+	"console":
+	{
+		"height": 132.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bravmech/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/media/storage/playground/projects/ril/examples/shared.css",
+		"/media/storage/playground/projects/ril/templates/layout.html",
+		"/media/storage/playground/projects/ril/templates/welcome.html",
+		"/home/bravmech/.config/gtk-2.0/gtkfilechooser.ini",
+		"/media/storage/playground/org/old/log.org",
+		"/home/bravmech/playground/coursera/friendsmoneybytes-004/02 - Lecture 1 (Version 1) What makes CDMA work for my smartphone/29 - Summary (2-45)/3 - 29 - Summary (245).srt",
+		"/home/bravmech/playground/coursera/friendsmoneybytes-004/02 - Lecture 1 (Version 1) What makes CDMA work for my smartphone/01 - Your Smartphone (2-47)/3 - 1 - Your Smartphone (247).srt",
+		"/media/storage/playground/projects/ril/schema.sql",
+		"/home/bravmech/Downloads/list.css",
+		"/home/bravmech/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/bravmech/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/media/storage/playground/projects/ril/static/main.css",
+		"/home/bravmech/.config/sublime-text-2/Packages/orgmode/messages/install.org",
+		"/media/storage/org/day.org",
+		"/media/storage/org/week.org",
+		"/media/storage/org/log.org",
+		"/media/storage/playground/entertainment.org",
+		"/home/bravmech/.config/sublime-text-2/Packages/orgmode/orgmode.sublime-settings",
+		"/home/bravmech/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/media/storage/playground/projects/ril/play.sql",
+		"/media/storage/playground/projects/ril/templates/login.html",
+		"/media/storage/playground/udacity/cs253/final/templates/base.html",
+		"/media/storage/playground/projects/ril/templates/base.html",
+		"/media/storage/playground/projects/ril/templates/history.html",
+		"/media/storage/playground/projects/ril/templates/edit.html",
+		"/home/bravmech/playground/projects/ril/templates/signup.html",
+		"/home/bravmech/playground/projects/ril/templates/login.html",
+		"/home/bravmech/playground/projects/ril/templates/welcome.html",
+		"/media/storage/playground/php/play.php",
+		"/media/storage/playground/projects/ril/utils.py",
+		"/home/bravmech/playground/projects/ril/templates/signup-form.html",
+		"/home/bravmech/.config/sublime-text-2/Packages/User/php.sublime-build",
+		"/home/bravmech/.config/sublime-text-2/Packages/User/scheme.sublime-build",
+		"/media/storage/playground/play.scm",
+		"/home/bravmech/Downloads/torrents/Sherlock.S01E01.SWESUB.HDTV.XvID-Aviici/Viktigt om Serien Sherlock.txt",
+		"/home/bravmech/.config/sublime-text-2/Packages/Scheme/Scheme.sublime-build",
+		"/home/bravmech/.config/sublime-text-2/Packages/User/Scheme.sublime-settings",
+		"/media/storage/playground/sicp/basic.scm",
+		"/media/storage/playground/sicp/chap1/3.scm",
+		"/media/storage/playground/sicp/chap1/1.scm",
+		"/media/storage/playground/coursera/howthingswork1-002/03 - Episode 2 - Falling Balls/08 - Falling Balls - Summary [322]/3 - 8 - Falling Balls - Summary [322].srt",
+		"/home/bravmech/playground/coursera/howthingswork1-002/06 - Episode 5 - Wheels/02 - Wheels - Part 1 - Why does a wagon need wheels [958]/6 - 2 - Wheels - Part 1 - Why does a wagon need wheels [958].srt",
+		"/media/storage/playground/flask/tmp.txt",
+		"/home/bravmech/bin/unix2win.py",
+		"/home/bravmech/playground/coursera/intrologic/intrologic-004/07 - Lesson 7 - Relational Logic Proofs/01 - 7.1 Relational Logic Proofs (2 min)/7 - 1 - 7.1 Relational Logic Proofs (2 min).srt",
+		"/home/bravmech/Downloads/2 - 2 - Skating - Part 1 - Why does a motionless skater tend to remain motionless [908].srt",
+		"/home/bravmech/Downloads/2-2.srt",
+		"/home/bravmech/playground/coursera/algs4partI/algs4partI-003/05 - Week 2  Elementary Sorts/05 - Shuffling (7-39)/5 - 5 - Shuffling (739).srt",
+		"/home/bravmech/playground/coursera/intrologic/intrologic-004/07 - Lesson 7 - Relational Logic Proofs/02 - 7.2 Proofs (10 min)/7 - 2 - 7.2 Proofs (10 min).srt",
+		"/home/bravmech/playground/coursera/howthingswork1-002/02 - Episode 1 - Skating/02 - Skating - Part 1 - Why does a motionless skater tend to remain motionless [908]/2 - 2 - Skating - Part 1 - Why does a motionless skater tend to remain motionless [908].srt",
+		"/media/storage/playground/sicp/chap2/2.scm",
+		"/home/bravmech/playground/sicp/chap1/21.scm",
+		"/media/storage/playground/python/memrise/cd1en.txt",
+		"/media/storage/playground/python/memrise/cd1ru.txt",
+		"/media/storage/playground/python/memrise/cd1.txt",
+		"/media/storage/playground/python/memrise/colordict2anki.py",
+		"/home/bravmech/tmp.txt",
+		"/home/bravmech/playground/python/memrise/cd1ru.txt",
+		"/home/bravmech/.config/ipython/profile_default/ipython_config.py",
+		"/home/bravmech/playground/python/memrise/colordict1.txt",
+		"/media/storage/playground/python/memrise/0.txt",
+		"/media/storage/playground/python/memrise/memrise-intro-italian.txt",
+		"/media/storage/playground/python/memrise/latin-27.txt",
+		"/media/storage/playground/python/memrise/tmp.txt",
+		"/home/bravmech/Anki/addons/awesometts/main.py",
+		"/home/bravmech/Anki/addons/awesometts/services/Google.py",
+		"/home/bravmech/Anki/addons/awesometts/services/sapi5.py",
+		"/home/bravmech/atts.log",
+		"/home/bravmech/Anki/addons/awesometts/util.py",
+		"/home/bravmech/Anki/addons/AwesomeTTS.py",
+		"/home/bravmech/pdfscissors/pdfscissors.properties",
+		"/media/storage/playground/python/magick.py",
+		"/media/storage/playground/python/kmp.py",
+		"/media/storage/playground/python/Matrix.py",
+		"/media/storage/playground/python/regular_login.py",
+		"/media/storage/playground/python/rot13.py",
+		"/media/storage/playground/python/pollard_rho.py",
+		"/media/storage/playground/python/algo/shuffle.py",
+		"/media/storage/playground/python/pyproc.py",
+		"/media/storage/playground/python/algo/quicksort.py",
+		"/media/storage/playground/python/algo/UnionFind.py",
+		"/media/storage/playground/python/algo/test_mst.py",
+		"/home/bravmech/Downloads/3a1da472d50311bacb30282d478195e5.rkt",
+		"/home/bravmech/.config/sublime-text-2/Packages/Racket/Racket.sublime-build",
+		"/home/bravmech/.config/sublime-text-2/Packages/Python/Python.sublime-build",
+		"/media/storage/playground/play.py",
+		"/media/storage/playground/coursera/readme.org",
+		"/home/gorlum0/playground/algo2-class/programming/pa5/Q1.py",
+		"/home/gorlum0/playground/algo2-class/programming/UnionFind.py",
+		"/home/gorlum0/playground/algo2-class/programming/kruskal.py",
+		"/home/gorlum0/playground/algo2-class/programming/q3-5.py",
+		"/home/gorlum0/playground/algo2-class/programming/pa6/Q1.py",
+		"/home/gorlum0/playground/algs4partI-class/programming/pa1/PercolationStats.java",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/support/paths.rb",
+		"/home/gorlum0/.config/sublime-text-2/Packages/User/Ruby.sublime-settings",
+		"/home/gorlum0/.config/sublime-text-2/Packages/User/Java.sublime-settings",
+		"/home/gorlum0/playground/algs4partI-class/programming/pa1/PercolationVisualizer.java",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/step_definitions/web_steps.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/views/movies/show.html.haml",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/views/movies/edit.html.haml",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/filter_movie_list.feature",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/step_definitions/movie_steps.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/views/movies/new.html.haml",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/support/selectors.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/support/env.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/helpers/movies_helper.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/models/movie.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/features/search_for_movie_by_director.feature",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/features/step_definitions/movie_steps.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/views/movies/index.html.haml",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/features/sort_movie_list.feature",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/spec/factories/movie.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/Gemfile",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/spec/movies_controller_spec.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/spec/spec_helper.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/helpers/application_helper.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/views/movies/same_director.html.haml",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/config/routes.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/db/schema.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/features/support/paths.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/db/migrate/20111119180638_create_movies.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/db/migrate/20130216075615_add_director_to_movies.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/app/controllers/movies_controller.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw4_rottenpotatoes/public/404.html",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/features/step_definitions/web_steps.rb",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/hw3_rottenpotatoes.sublime-project",
+		"/home/gorlum0/playground/edx-CS169.1x/programming/hw3_rottenpotatoes/Gemfile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span",
+			"flash",
+			"execute",
+			"div",
+			"span",
+			"show_",
+			"list.html",
+			"status",
+			"g.user",
+			"save",
+			"get_user",
+			"ipdb",
+			"get_user",
+			"installed:",
+			"installed",
+			"edit",
+			"'record'",
+			"TTS_service",
+			"log",
+			"\n	",
+			"find",
+			"click",
+			"fill",
+			"click_link",
+			"follow",
+			"should",
+			"session",
+			"diff",
+			"cucum",
+			"            \n",
+			"sys.argv[-1]",
+			"\"",
+			"project",
+			"slash",
+			"versin",
+			"+ path",
+			"logging",
+			"age",
+			"def post(",
+			"post",
+			"texta",
+			"fet",
+			"string",
+			"random",
+			"db.Model",
+			"login",
+			"def post(",
+			"blog",
+			"BlogHandler",
+			"post_id",
+			"r.json['data']",
+			"\"",
+			"render_front",
+			"art",
+			"render_json",
+			"by_name",
+			"{{user",
+			"super",
+			"to_dict",
+			"redi",
+			"redirect",
+			"signup",
+			"welcome",
+			"format",
+			"welcome",
+			"redirect",
+			"user=",
+			"front",
+			"user =",
+			"front",
+			"conte",
+			"welcome",
+			"user =",
+			"blog.html",
+			"user =",
+			"front",
+			"permal",
+			"front.html",
+			"self.user",
+			"render_post",
+			"self.user",
+			"register",
+			"login",
+			"User.login",
+			"last_modified",
+			"escape",
+			"render_str",
+			"blankx",
+			"goal",
+			"board",
+			"System.out",
+			"del_item",
+			"stronG",
+			"top",
+			"J",
+			"press",
+			"heap_size",
+			"smallest",
+			"largest",
+			"novideo",
+			" 8",
+			"// out",
+			"out.printf",
+			"barn1",
+			"Infinity",
+			"j-i",
+			"Queue",
+			"number",
+			"sub",
+			"tab",
+			"],\n",
+			"_hold	",
+			"_hold",
+			"None",
+			"data",
+			"count",
+			"tab",
+			"next",
+			"	// ",
+			"ctrl+k",
+			"djan",
+			"h2",
+			"()",
+			"firstChild",
+			"false",
+			", ",
+			"toggleExpando",
+			"()"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"opt",
+			"'",
+			"Handler",
+			"'",
+			"rdata",
+			"'",
+			"goalblocks",
+			"blocks",
+			"out",
+			"heap_last",
+			"if (DEBUG == 1)",
+			"// out.printf",
+			"calfflac",
+			"inf",
+			"m"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ril.py",
+					"settings":
+					{
+						"buffer_size": 6873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5889,
+								5889
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2860.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "utils.py",
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "examples/list.css",
+					"settings":
+					{
+						"buffer_size": 5154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3064,
+								3064
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3310.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/new.html",
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/list.html",
+					"settings":
+					{
+						"buffer_size": 845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "static/main.css",
+					"settings":
+					{
+						"buffer_size": 1891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1891,
+								1891
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1612.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"list",
+				"/media/storage/playground/projects/ril/templates/list.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true
+}
