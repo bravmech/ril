@@ -25,7 +25,9 @@ from utils import *
 # basically it's config
 app.secret_key = 'omsVT1zPKmBhPMEVNlVQvgryp'
 app.config.update(dict(
-    SQLALCHEMY_DATABASE_URI='sqlite:////%s/ril.db' % app.root_path,
+    SQLALCHEMY_DATABASE_URI=os.environ.get(
+        'DATABASE_URL',
+        'sqlite:////%s/ril.db' % app.root_path),
     DEBUG=True,
     SECRET_KEY='development key',
 ))
@@ -163,7 +165,7 @@ def login():
         valid = False
     else:
         user = get_user(username) # id, name, pw_hash, email
-        valid = user and isvalid_pw(username, password, user[2])
+        valid = user and isvalid_pw(username, password, user.pw_hash)
 
     if not valid:
         error = 'Invalid login.'
