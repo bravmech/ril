@@ -1,5 +1,11 @@
 venv/
 *.pyc
 *.db
+
 logs.txt
+
 .fuse*
+play.sql
+
+*.sublime-project
+*.sublime-workspace
