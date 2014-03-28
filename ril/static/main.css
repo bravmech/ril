@@ -1,0 +1,133 @@
+/* =general */
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.label {
+    text-align: right;
+}
+
+/* =navbar and =login*/
+.navbar {
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.login-area {
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-link, .navbar-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.login-link:visited, .navbar-link:visited {
+    color: gray;
+}
+
+.login-link:hover, .navbar-link:hover {
+    text-decoration: underline;
+}
+
+/* =item stuff */
+.item-title {
+    font-size: 24px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: #333;
+}
+
+.item-title:visited {
+    color: #333;
+}
+
+.item-content {
+    max-width: 450px;
+}
+
+.item-do {
+    position: absolute;
+    right: 10px;
+}
+
+.item-do a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.item-do img {
+    max-width: 16px;
+    height: auto;
+}
+
+.item-list > li {
+    padding-bottom: 1em;
+}
+
+.item-added {
+    font-size: .85em;
+    color: grey;
+}
+
+/* =item-new */
+.item-new {
+    position: relative;
+    left: 30px;
+}
+
+.item-new h2 {
+    margin-bottom: 5px;
+}
+
+.item-new input[type=text] {
+    width: 400px;
+    font-size: 16px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+/* =flash and =error */
+.flash {
+    display: inline-block;
+    background: #CEE5F5;
+    border: 1px solid #AACBE2;
+    margin-left: 30px;
+}
+
+.error {
+    color: red;
+}
+

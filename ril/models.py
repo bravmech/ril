@@ -1,4 +1,4 @@
-from app import db
+from ril import db
 
 import datetime as dt
 from utils import *

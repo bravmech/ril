@@ -1,2 +1,2 @@
-from app import app
+from ril import app
 app.run(debug=True)

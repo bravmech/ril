@@ -1,10 +1,8 @@
-# basically it's config
+import os
+from ril import app
+
 app.secret_key = 'omsVT1zPKmBhPMEVNlVQvgryp'
-app.config.update(dict(
-    SQLALCHEMY_DATABASE_URI=os.environ.get(
-        'DATABASE_URL',
-        'sqlite:////%s/ril.db' % app.root_path),
-    DEBUG=True,
-    SECRET_KEY='development key',
-))
-app.jinja_env.globals.update(isurl=isurl)
+SQLALCHEMY_DATABASE_URI=os.environ.get(
+    'DATABASE_URL',
+    'sqlite:////' + os.path.join(app.root_path, 'ril.db'))
+SECRET_KEY='development key'

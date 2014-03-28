@@ -1,17 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-    RIL2.0
-    ~~~~~~
-
-    RIL to be taken to the next level.
-
-    :copyright: (c) 2014 by bravmech
-"""
-
-from flask import Flask, g
+from flask import g
 from flask import redirect, url_for, render_template
 from flask import session, request, flash
-app = Flask(__name__)
+from ril import app
 
 import os
 import ipdb
@@ -22,15 +12,6 @@ from utils import *
 from models import *
 
 
-# basically it's config
-app.secret_key = 'omsVT1zPKmBhPMEVNlVQvgryp'
-app.config.update(dict(
-    SQLALCHEMY_DATABASE_URI=os.environ.get(
-        'DATABASE_URL',
-        'sqlite:////%s/ril.db' % app.root_path),
-    DEBUG=True,
-    SECRET_KEY='development key',
-))
 app.jinja_env.globals.update(isurl=isurl)
 
 
@@ -202,9 +183,3 @@ def delete(item_id):
     db.session.commit()
     flash('item deleted')
     return redirect('/read')
-
-
-if __name__ == '__main__':
-    db.create_all()
-    db.session.commit()
-    app.run(debug=True)
