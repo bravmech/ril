@@ -20,7 +20,7 @@ app.jinja_env.globals.update(isurl=isurl)
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if g.user is None:
+        if not getattr(g, 'user', None):
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
@@ -107,22 +107,22 @@ def login():
     return redirect(url_for('welcome'))
 
 
-@login_required
 @app.route('/welcome/')
+@login_required
 def welcome():
     return render_template('welcome.html', name=session['username'],
                             unread_page='/unread')
 
 
-@login_required
 @app.route('/logout/')
+@login_required
 def logout():
     session.pop('username', None)
     return redirect(url_for('login'))
 
 
-@login_required
 @app.route('/new/', methods=['GET', 'POST'])
+@login_required
 def new_item():
     if request.method == 'GET':
         return render_template('new.html', username=session['username'])
@@ -135,15 +135,15 @@ def new_item():
     return redirect('/unread')
 
 
-@login_required
 @app.route('/')
+@login_required
 def index():
     return redirect('/unread')
 
 
-@login_required
 @app.route('/read/', defaults={'state': 'read'})
 @app.route('/unread/', defaults={'state': 'unread'})
+@login_required
 def show_list(state):
     """showing both read and unread in one function since
     they are too similar. kinda weird i know, needs refactoring."""
@@ -153,9 +153,9 @@ def show_list(state):
                             state=state)
 
 
-@login_required
-@verify_item
 @app.route('/check/<int:item_id>')
+@verify_item
+@login_required
 def check(item_id):
     item = get_item(item_id)
     item.state = 'read'
@@ -165,9 +165,9 @@ def check(item_id):
     return redirect('/unread')
 
 
-@login_required
-@verify_item
 @app.route('/re-add/<int:item_id>')
+@verify_item
+@login_required
 def re_add(item_id):
     item = get_item(item_id)
     item.state = 'unread'
@@ -177,9 +177,9 @@ def re_add(item_id):
     return redirect('/read')
 
 
-@login_required
-@verify_item
 @app.route('/delete/<int:item_id>')
+@verify_item
+@login_required
 def delete(item_id):
     item = get_item(item_id)
     db.session.delete(item)
