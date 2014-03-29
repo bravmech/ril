@@ -27,6 +27,7 @@ def login_required(f):
 
 
 def verify_item(f):
+    """checks whether the item belongs to logged user"""
     @wraps(f)
     def decorated_function(*args, **kwargs):
         item_id = kwargs['item_id']
@@ -106,24 +107,23 @@ def login():
     return redirect(url_for('welcome'))
 
 
+@login_required
 @app.route('/welcome/')
 def welcome():
-    if 'username' in session:
-        return render_template('welcome.html', name=session['username'],
-                                unread_page='/unread')
-    return redirect(url_for('signup'))
+    return render_template('welcome.html', name=session['username'],
+                            unread_page='/unread')
 
 
+@login_required
 @app.route('/logout/')
 def logout():
     session.pop('username', None)
     return redirect(url_for('login'))
 
 
+@login_required
 @app.route('/new/', methods=['GET', 'POST'])
 def new_item():
-    if 'username' not in session:
-        return redirect(url_for('login'))
     if request.method == 'GET':
         return render_template('new.html', username=session['username'])
 
@@ -135,24 +135,25 @@ def new_item():
     return redirect('/unread')
 
 
+@login_required
 @app.route('/')
 def index():
     return redirect('/unread')
 
 
+@login_required
 @app.route('/read/', defaults={'state': 'read'})
 @app.route('/unread/', defaults={'state': 'unread'})
 def show_list(state):
     """showing both read and unread in one function since
     they are too similar. kinda weird i know, needs refactoring."""
-    if 'username' not in session:
-        return redirect(url_for('login'))
     # ipdb.set_trace()
     items = Item.query.filter_by(state=state, user_id=g.user.id)
     return render_template('list.html', items=items, username=session['username'],
                             state=state)
 
 
+@login_required
 @verify_item
 @app.route('/check/<int:item_id>')
 def check(item_id):
@@ -164,6 +165,7 @@ def check(item_id):
     return redirect('/unread')
 
 
+@login_required
 @verify_item
 @app.route('/re-add/<int:item_id>')
 def re_add(item_id):
@@ -175,6 +177,7 @@ def re_add(item_id):
     return redirect('/read')
 
 
+@login_required
 @verify_item
 @app.route('/delete/<int:item_id>')
 def delete(item_id):
