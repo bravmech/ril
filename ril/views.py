@@ -144,7 +144,9 @@ def index():
 @login_required
 def show_unread():
     # ipdb.set_trace()
-    items = Item.query.filter_by(state='unread', user_id=g.user.id)
+    items = Item.query. \
+            filter_by(state='unread', user_id=g.user.id). \
+            order_by(Item.added.desc())
     return render_template('unread.html', items=items,
                             username=session['username'])
 
@@ -152,7 +154,9 @@ def show_unread():
 @app.route('/read/')
 @login_required
 def show_read():
-    items = Item.query.filter_by(state='read', user_id=g.user.id)
+    items = Item.query. \
+            filter_by(state='read', user_id=g.user.id). \
+            order_by(Item.added.desc())
     return render_template('read.html', items=items,
                             username=session['username'])
 
