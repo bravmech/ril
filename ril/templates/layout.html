@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+  <link type='text/css' rel='stylesheet' href='/static/main.css' />
   <title>ril</title>
 </head>
 <body>
 
-<a href="/" class="main-title">
+<a href='/' class='main-title'>
   ril {{state}}
 </a>
 
 <div class='navbar'>
-  <a href="/unread" class='navbar-link'>unread</a>
+  <a href='/unread' class='navbar-link'>unread</a>
   |
-  <a href="/read" class='navbar-link'>read</a>
+  <a href='/read' class='navbar-link'>read</a>
 </div>
 
-<div class="login-area">
+<div class='login-area'>
   {% if state == 'unread' %}
-    <a class="login-link" href="/new">new</a> |
+    <a class='login-link' href='/new'>new</a> |
   {% endif %}
-  {{username}} (<a class="login-link" href="/logout">logout</a>)
+  {{username}} (<a class='login-link' href='/logout'>logout</a>)
 </div>
 
 {% for message in get_flashed_messages() %}
@@ -28,7 +28,7 @@
 {% endfor %}
 
 <!-- bad block name; upd. or not -->
-<div id="content">
+<div id='content'>
   {% block content %}
   {% endblock %}
 </div>
