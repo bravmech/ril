@@ -153,7 +153,7 @@ def show_list(state):
                             state=state)
 
 
-@app.route('/check/<int:item_id>')
+@app.route('/check/<int:item_id>', methods=['POST'])
 @verify_item
 @login_required
 def check(item_id):
@@ -165,7 +165,7 @@ def check(item_id):
     return redirect('/unread')
 
 
-@app.route('/re-add/<int:item_id>')
+@app.route('/re-add/<int:item_id>', methods=['POST'])
 @verify_item
 @login_required
 def re_add(item_id):
@@ -177,7 +177,7 @@ def re_add(item_id):
     return redirect('/read')
 
 
-@app.route('/delete/<int:item_id>')
+@app.route('/delete/<int:item_id>', methods=['POST'])
 @verify_item
 @login_required
 def delete(item_id):
