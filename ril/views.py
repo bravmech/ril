@@ -26,17 +26,17 @@ def login_required(f):
     return decorated_function
 
 
-def verify_item(f):
-    """checks whether the item belongs to logged user"""
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        item_id = kwargs['item_id']
-        item = get_item(item_id)
-        if g.user and item.user_id != g.user.id:
-            flash('Please edit your own items.')
-            return redirect('/unread')
-        return f(*args, **kwargs)
-    return decorated_function
+# def verify_item(f):
+#     """checks whether the item belongs to logged user"""
+#     @wraps(f)
+#     def decorated_function(*args, **kwargs):
+#         item_id = kwargs['item_id']
+#         item = get_item(item_id)
+#         if g.user and item.user_id != g.user.id:
+#             flash('Please edit your own items.')
+#             return redirect('/unread')
+#         return f(*args, **kwargs)
+#     return decorated_function
 
 
 @app.before_request
@@ -110,8 +110,7 @@ def login():
 @app.route('/welcome/')
 @login_required
 def welcome():
-    return render_template('welcome.html', name=session['username'],
-                            unread_page='/unread')
+    return render_template('welcome.html', name=session['username'])
 
 
 @app.route('/logout/')
@@ -141,48 +140,54 @@ def index():
     return redirect('/unread')
 
 
-@app.route('/read/', defaults={'state': 'read'})
-@app.route('/unread/', defaults={'state': 'unread'})
+@app.route('/unread/')
 @login_required
-def show_list(state):
-    """showing both read and unread in one function since
-    they are too similar. kinda weird i know, needs refactoring."""
+def show_unread():
     # ipdb.set_trace()
-    items = Item.query.filter_by(state=state, user_id=g.user.id)
-    return render_template('list.html', items=items, username=session['username'],
-                            state=state)
+    items = Item.query.filter_by(state='unread', user_id=g.user.id)
+    return render_template('unread.html', items=items,
+                            username=session['username'])
 
 
-@app.route('/check/<int:item_id>', methods=['POST'])
-@verify_item
+@app.route('/read/')
 @login_required
-def check(item_id):
+def show_read():
+    items = Item.query.filter_by(state='read', user_id=g.user.id)
+    return render_template('read.html', items=items,
+                            username=session['username'])
+
+
+@app.route('/check', methods=['POST'])
+@login_required
+def check():
+    # ipdb.set_trace()
+    item_id = request.form['item_id']
     item = get_item(item_id)
     item.state = 'read'
     item.added = dt.datetime.now()
     db.session.commit()
     flash('item marked as read')
-    return redirect('/unread')
+    return url_for('show_unread')
 
 
-@app.route('/re-add/<int:item_id>', methods=['POST'])
-@verify_item
+@app.route('/re-add', methods=['POST'])
 @login_required
-def re_add(item_id):
+def re_add():
+    item_id = request.form['item_id']
     item = get_item(item_id)
     item.state = 'unread'
     item.added = dt.datetime.now()
     db.session.commit()
     flash('item marked as unread')
-    return redirect('/read')
+    return url_for('show_read')
 
 
-@app.route('/delete/<int:item_id>', methods=['POST'])
-@verify_item
+@app.route('/delete', methods=['POST'])
 @login_required
-def delete(item_id):
+def delete():
+    item_id = request.form['item_id']
     item = get_item(item_id)
     db.session.delete(item)
     db.session.commit()
     flash('item deleted')
-    return redirect('/read')
+    return url_for('show_read')
