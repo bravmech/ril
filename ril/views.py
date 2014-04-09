@@ -149,7 +149,7 @@ def show_unread():
         .order_by(Item.added.desc())
     )
     return render_template('unread.html', items=items,
-                            username=session['username'])
+                            username=session['username'], state='unread')
 
 
 @app.route('/read/')
