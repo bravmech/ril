@@ -48,7 +48,6 @@ def load_user():
 
 @app.route('/signup/', methods=['GET', 'POST'])
 def signup():
-    set_trace()
     if request.method == 'GET':
         if 'username' in session:
             return redirect('/unread')
