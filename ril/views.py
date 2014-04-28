@@ -4,7 +4,7 @@ from flask import session, request, flash
 from ril import app
 
 import os
-import ipdb
+from ipdb import set_trace
 import datetime as dt
 from functools import wraps
 
@@ -48,6 +48,7 @@ def load_user():
 
 @app.route('/signup/', methods=['GET', 'POST'])
 def signup():
+    set_trace()
     if request.method == 'GET':
         if 'username' in session:
             return redirect('/unread')
