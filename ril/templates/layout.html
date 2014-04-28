@@ -2,7 +2,7 @@
 <html>
 <head>
   <link type='text/css' rel='stylesheet' href='/static/main.css' />
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
   <title>ril</title>
 
   <script>
@@ -16,6 +16,17 @@
         );
       });
     };
+
+    if (!String.prototype.format) {
+      String.prototype.format = function() {
+        var args = arguments;
+        return this.replace(/{(\d+)}/g, function(match, number) {
+          return typeof args[number] != 'undefined'
+            ? args[number]
+            : match;
+        });
+      };
+    }
   </script>
 </head>
 <body>
