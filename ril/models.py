@@ -36,7 +36,7 @@ class Item(db.Model):
         return '<Item %r>' % self.content
 
 
-def create_user(username, password, email):
+def create_user(username, password, email=''):
     u = User(username, make_pw_hash(username, password), email)
     db.session.add(u)
     db.session.commit()
