@@ -6,9 +6,12 @@
   <title>ril</title>
 
   <script>
+    log = function(x) { console.log(x); }
+
     // to selected on element
     function attach_post_onclick(elem, sel, url, data) {
-      elem.find(sel).click(function() {
+      elem.find(sel).click(function( e ) {
+        e.preventDefault();
         $.post(
           url,
           data,
