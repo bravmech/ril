@@ -9,3 +9,6 @@ play.sql
 
 *.sublime-project
 *.sublime-workspace
+
+.coverage
+htmlcov/
