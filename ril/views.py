@@ -97,7 +97,7 @@ def login():
     if not username:
         valid = False
     else:
-        user = get_user(username) # id, name, pw_hash, email
+        user = get_user(username)
         valid = user and isvalid_pw(username, password, user.pw_hash)
 
     if not valid:
@@ -130,7 +130,7 @@ def new_item():
     db.session.add(item)
     db.session.commit()
 
-    flash('new item aded')
+    flash('new item added')
     return redirect('/unread')
 
 
