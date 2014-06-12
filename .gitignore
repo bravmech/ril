@@ -11,4 +11,5 @@ play.sql
 *.sublime-workspace
 
 .coverage
+.coveragerc
 htmlcov/
