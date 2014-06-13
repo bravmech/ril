@@ -8,6 +8,7 @@ from ril import app, db
 from ril.models import *
 
 from ipdb import set_trace
+import bs4
 
 
 class RilTestCase(unittest.TestCase):
@@ -182,13 +183,66 @@ class TestItem(RilTestCase):
         self.create_user_and_login('joe', 'pwd')
         item_content = "joe's item"
         self.new(item_content)
+        # set_trace()
         # redirect to unread
         ret = self.app.post('/check', data=dict(
             item_id=1 # hardcoded
         ), follow_redirects=True)
+        ret = self.app.get('/unread/', follow_redirects=True)
         assert not re.search(escape(item_content), ret.data, re.I)
         ret = self.app.get('/read/', follow_redirects=True)
         assert re.search(escape(item_content), ret.data, re.I)
+
+    def test_re_add(self):
+        self.create_user_and_login('joe', 'pwd')
+        item_content = "joe's item"
+        self.new(item_content)
+        # redirect to unread
+        self.app.post('/check', data=dict(
+            item_id=1 # hardcoded
+        ), follow_redirects=True)
+        ret = self.app.post('/re-add', data=dict(
+            item_id=1 # hardcoded
+        ), follow_redirects=True)
+        ret = self.app.get('/read/', follow_redirects=True)
+        assert not re.search(escape(item_content), ret.data, re.I)
+        ret = self.app.get('/unread/', follow_redirects=True)
+        assert re.search(escape(item_content), ret.data, re.I)
+
+    def test_delete(self):
+        self.create_user_and_login('joe', 'pwd')
+        item_content = "joe's item"
+        self.new(item_content)
+        # redirect to unread
+        self.app.post('/delete', data=dict(
+            item_id=1 # hardcoded
+        ), follow_redirects=True)
+        ret = self.app.get('/unread/', follow_redirects=True)
+        assert not re.search(escape(item_content), ret.data, re.I)
+        ret = self.app.get('/read/', follow_redirects=True)
+        assert not re.search(escape(item_content), ret.data, re.I)
+
+    def test_verify(self):
+        """ just in case, even if it requires manual post request """
+        self.create_user_and_login('joe1', 'pwd1')
+        item_content1 = "joe1's item"
+        ret = self.new(item_content1)
+        assert re.search(escape(item_content1), ret.data, re.I)
+        self.logout()
+
+        self.create_user_and_login('joe2', 'pwd2')
+        item_content2 = "joe2's item"
+        ret = self.new(item_content2)
+        assert re.search(escape(item_content2), ret.data, re.I)
+        ret = self.app.post('/delete', data=dict(
+            item_id=1 # hardcoded, joe1's item
+        ), follow_redirects=True)
+        assert re.search('Please edit your own items.', ret.data, re.I)
+        self.logout()
+
+        self.login('joe1', 'pwd1')
+        ret = self.app.get('/unread/', follow_redirects=True)
+        assert re.search(escape(item_content1), ret.data, re.I)
 
 
 if __name__ == '__main__':
