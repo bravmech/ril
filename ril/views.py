@@ -26,17 +26,18 @@ def login_required(f):
     return decorated_function
 
 
-# def verify_item(f):
-#     """checks whether the item belongs to logged user"""
-#     @wraps(f)
-#     def decorated_function(*args, **kwargs):
-#         item_id = kwargs['item_id']
-#         item = get_item(item_id)
-#         if g.user and item.user_id != g.user.id:
-#             flash('Please edit your own items.')
-#             return redirect('/unread')
-#         return f(*args, **kwargs)
-#     return decorated_function
+def verify_item(f):
+    """ checks whether the item belongs to logged user
+    won't actually fire if the user isn't logged """
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        item_id = request.form['item_id']
+        item = get_item(item_id)
+        if g.user and item.user_id != g.user.id:
+            flash('Please edit your own items.')
+            return redirect('/unread')
+        return f(*args, **kwargs)
+    return decorated_function
 
 
 @app.before_request
@@ -164,9 +165,9 @@ def show_read():
 
 
 @app.route('/check', methods=['POST'])
+@verify_item
 @login_required
 def check():
-    # ipdb.set_trace()
     item_id = request.form['item_id']
     item = get_item(item_id)
     item.state = 'read'
@@ -177,6 +178,7 @@ def check():
 
 
 @app.route('/re-add', methods=['POST'])
+@verify_item
 @login_required
 def re_add():
     item_id = request.form['item_id']
@@ -189,6 +191,7 @@ def re_add():
 
 
 @app.route('/delete', methods=['POST'])
+@verify_item
 @login_required
 def delete():
     item_id = request.form['item_id']
